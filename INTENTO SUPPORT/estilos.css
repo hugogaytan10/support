@@ -3,8 +3,10 @@
 	padding: 0;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
+    
 	
 }
+
 #img img:hover
 {
     -webkit-transform: scale(1.10);
@@ -17,15 +19,14 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
-body
-{
+header{
     min-width: 1000px;
 }
 
-#menu
+#menup
 {
     z-index: 100;
+    
 }
 
 .navegacion
@@ -66,7 +67,7 @@ body
 
 .menu li a:hover
 {
-    color: #ffffff;
+    color: orange;
     transition: all .1s;
 }
 /* Termina menu principal*/
@@ -89,11 +90,4 @@ body
 {
     z-index: 2;
 }
-/* Termina Banderita */
-#p1
-{
-    padding: 150px;
-    margin-top: 2em;
-    text-align: center;
-    font-size: 60px;
-}
+
