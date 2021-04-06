@@ -3,91 +3,145 @@
 	padding: 0;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
-    
 	
 }
 
-#img img:hover
-{
-    -webkit-transform: scale(1.10);
-    -moz-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    transform: scale(1.10);
+body{
+    /*background: #081C60;*/
+    /*background: #696969;*/
+    background: rgba(255,255,255);
 }
+
 
 ::-webkit-scrollbar {
     display: none;
 }
-header{
-    min-width: 1000px;
+
+
+
+/* Menu chingon */
+.nav__responsive-ul{
+	display: none;
+    z-index: 1;
+}
+.nav__ul{
+    padding: 12px;
+	background-color: #35f;
+    text-align: right;
+    transition: all 2.2s;
+}
+.nav__li{
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+.nav__li:hover{
+	color: #bbb;
+}
+.nav__li:hover > a{
+	color: #bbb;
+}
+.nav__li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav__li i{
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
 }
 
-#menup
-{
-    z-index: 100;
+/* Menu responsive*/
+@media only screen and (max-width: 675px){
+    .nav__ul{
+        display: none;
+    }
+    .nav{
+        width: 75%;
+        height: 100%;
+    }
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 75%;
+        background-color: #57d;
+        padding: 12px;
+        height: 100%;
+        list-style: none;
+        font-size: 26px;
+    }
+    .nav__responsive-li{
+        padding: 12px;
+    }
+    .nav__responsive-li a{
+        color: #fff;
+        text-decoration: none;
+        text-align: right;
+        
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: right;
+        margin-right: 5px; 
+        width: 28px;
+    }
+}
+/* termina menu chingon*/
+
+
+/*footer*/
+.footer{
+    margin: 0;
+    padding: 0;
     
 }
-
-.navegacion
-{
-    padding-top: 7px;
-    width: auto;
-    height: 80px;
-    margin: -25px auto;
-    background: #000000;
-    -webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.54);
-    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.54);
-    box-shadow: 0px 10px 20px -5px rgba(0,0,0,54.54);
-    border-bottom: solid 7px #00008B;
+.footer__redes{
+    display: flex;
+    
 }
-
-.navegacion ul
-{
+.footer__redes ul{
+    display: flex;
+    margin: auto;
+    height: 30px;
+}
+.footer__redes-logos{
+    list-style: none;
+    padding: 10px 30px;
+    
+}
+.footer__redes-logos a{
+    
+    font-size: 20px;
+    color: #02023D;
+    transition: all .25s;
+}
+.links-atajos{
+    display: flex;
+    
+}
+.links-atajos ul{
+    display: flex;
+    margin: auto;
+    height: 20px;
+}
+.atajos{
     list-style: none;
 }
-
-/* Menu principal */
-.menu > li
-{
-    position: center;
-    display: inline-block;
-}
-
-.menu > li > a
-{
-    align-content: center;
-    font-size: 27px;
-    display: block;
-    padding: 15px 40px;
-    color: #D3D3D3;
-    font-family: "Calibri", Times, serif;
+.atajos a{
     text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: #02023D;
+    transition: all .25s;
 }
-
-.menu li a:hover
-{
-    color: orange;
-    transition: all .1s;
+.atajos a:hover{
+    color: green;
 }
-/* Termina menu principal*/
-
-/* Banderita */
-#img img
-{
-    height: 60px;
-    width: 80px;
+.outer-footer{
+    padding: 0px 10px;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    
 }
-
-#img
-{
-    margin: 0px;
-    padding-left: 5px;
-    position: absolute;
-}
-
-#img
-{
-    z-index: 2;
-}
-
+/*termina footer*/
