@@ -4,21 +4,86 @@
 <head>
    <link rel="stylesheet" href="estilos_audifonos.css"/>
     <link rel="stylesheet" href="estilos.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class id="menu"> 
-    	<ul class id="table-menu">
-    		<li><a href="index.html">INICIO</a></li>
-    		<li><a href="#">NOVEDADES</a></li>
-    		<li><a href="Audifonos.html">Audifonos</a></li>
-    		<li><a href="#">Bocinas</a></li>
-    		<li><a href="#">Otros</a></li>
-            <li><a href="#">ACERDA DE</a></li>
-    	</ul>
-    </nav>
-	<div class id="contenedor">
-        <p>caliz</p>
+     <!--------------------------------------- Menu ------------------------------------------------>
+    <header>
+			<nav class="nav">
+				<ul class="nav__ul">
+					<li class="nav__li"><a href="index.html"><i class="fas fa-home"> Inicio</i></a></li>
+					<li class="nav__li"><a href="#"><i class="fas fa-user-friends"></i> Novedades</a></li>
+					<li class="nav__li"><a href="Audifonos.html"><i class="fas fa-headphones"></i> Audífonos</a></li>
+					<li class="nav__li"><a href="bocinas.html"><i class="fas fa-volume-up"></i> Bocinas</a></li>
+                    <li class="nav__li"><a href="#"><i class="fas fa-mobile"></i> Otros</a></li>
+                    <li class="nav__li"><a href="#"><i class="fas fa-question-circle"></i> Acerca de</a></li>
+				</ul>
+				<ul class="nav__responsive-ul">
+					<div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+					<div class="nav__li-container">
+						<li class="nav__responsive-li"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+						<li class="nav__responsive-li"><a href="#"><i class="fas fa-user-friends"></i> Novedades</a></li>
+						<li class="nav__responsive-li"><a href="Audifonos.html"><i class="fas fa-headphones"></i> Audífonos</a></li>
+						<li class="nav__responsive-li"><a href="bocinas.html"><i class="fas fa-volume-up"></i> Bocinas</a></li>
+                        <li class="nav__responsive-li"><a href="#"><i class="fas fa-mobile"></i> Otros</a></li>
+                        <li class="nav__responsive-li"><a href="#"><i class="fas fa-question-circle"></i> Acerca de</a></li>
+					</div>
+				</ul>
+            </nav>			
+    </header>
+<!------------------------------------- Termina Menu ------------------------------------------>
+    <div class="contenedor-todos-productos">
+        <div class="contenedor-articulos">
+            <section class="lista-productos">
+                <div class="producto">
+                    <img src="./audifonos/i12_verde.jpg"/>
+                    <a href="#">I12</a>
+                </div>
+                <div class="producto">
+                    <img src="./audifonos/inpots3.jpg"/>
+                    <a href="#">INPOTS 3</a>
+                </div>
+                <div class="producto">
+                    <img src="./audifonos/music.jpg"/>
+                    <a href="#">MUSIC</a>
+                </div>
+                <div class="producto">
+                    <img src="./audifonos/photo5138814085335460210.jpg"/>
+                    <a href="#">AUDIFONO 4</a>
+                </div>
+                <div class="producto">
+                    <img src="./audifonos/photo5138814085335460205.jpg"/>
+                    <a href="#">AUDIFONO 5</a>
+                </div>
+            </section>
+        </div>
+        
     </div>
+     <!-- Footer -->
+    <footer>
+        <div class="contenedor-footer" style="margin-top: 80px;">
+            <div class="links">
+                <ul>
+                    <li class="logos-redes"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    <li class="logos-redes"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="logos-redes"><a href="#"></a><i class="fab fa-twitter-square"></i></li>
+                </ul> 
+            </div>
+             <div class="links-atajos">
+                <ul>
+                    <li class="atajos"><a href="Audifonos.html">Audifonos</a></li>
+                    <li class="atajos"><a href="#">Bocinas</a></li>
+                    <li class="atajos"><a href="#">acerca de</a></li>
+                    <li class="atajos"><a href="#">novedades</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="outer-footer">
+            Copyrigth &copy; Support Uriangato. Todos los derechos reservados
+        </div>
+    </footer>
+<!-- Footer -->
 </body>
 </html>
