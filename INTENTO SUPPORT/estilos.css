@@ -35,10 +35,8 @@ body{
 	padding: 12px;
 	color: #fff;
 }
-.nav__li:hover{
-	color: #bbb;
-}
-.nav__li:hover > a{
+
+.nav__li a:hover{
 	color: #bbb;
 }
 .nav__li a{
@@ -57,33 +55,55 @@ body{
         display: none;
     }
     .nav{
-        width: 75%;
-        height: 100%;
+        width: 100%;
+        height: 37px;
     }
     .nav__responsive-ul{
         display: block;
         position: absolute;
-        width: 75%;
-        background-color: #57d;
-        padding: 12px;
-        height: 100%;
-        list-style: none;
-        font-size: 26px;
+        width: 100%;
+        height: 37px;
+
+    }
+    .nav__li-container{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: #57d;
+        top: -1000px;
+        transition: all 1.2s;
+        z-index: 6;
     }
     .nav__responsive-li{
-        padding: 12px;
+        width: 100%;
+        padding: 9px 20px;
     }
     .nav__responsive-li a{
         color: #fff;
-        text-decoration: none;
-        text-align: right;
-        
+        text-decoration: none;    
     }
     .nav__responsive-li i{
         box-sizing: border-box;
-        text-align: right;
+        text-align: center;
         margin-right: 5px; 
-        width: 28px;
+        width: 30px;
+        color: #fff;
+    }
+    .nav__responsive-button-container{
+        position: absolute;
+        width: 100%;
+        background-color: #35f;
+        color: #fff;
+        text-align: right;
+        z-index: 88;
+        height: 37px;
+    }
+    .nav__responsive-button{
+        font-size: 30px;
+        padding-right: 12px;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: 35px;
     }
 }
 /* termina menu chingon*/
